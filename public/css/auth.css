@@ -1,0 +1,31 @@
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+/* auth.css */
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background-color: #f9f9f9;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.tab-content.active {
+    display: block;
+}

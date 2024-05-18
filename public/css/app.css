@@ -1,0 +1,176 @@
+*{margin: 0;
+    font-family: sans-serif;}
+header{
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height:50px;
+    z-index: 1;
+    background-color: #1f212aef;
+    width: 100vw;
+
+}
+.div-right,.div-left{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.div-left{
+    justify-content: flex-start;
+}
+.div-right{
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.container{
+    margin-top: 50px;
+}
+footer{
+    bottom: 0;
+    background-color: #242b3b;
+    display :flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Загальні стилі для контейнерів у підвалі */
+.f-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Стилі для заголовків */
+.f-container h3 {
+    color: #75dec3;
+    margin: 0;
+    padding: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Стилі для контейнерів з текстом */
+.f-container div {
+    padding: 5px;
+    text-align: center;
+}
+
+/* Медіа-запит для пристроїв з шириною екрану менше 768px (тобто мобільні пристрої) */
+@media (max-width: 768px) {
+    /* Зміна напрямку вирівнювання для мобільних пристроїв */
+    .f-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        flex-direction: column;
+    }
+    /* Зміна розміру тексту для мобільних пристроїв */
+    .f-container h3 {
+        font-size: 1rem;
+    }
+
+}
+#logo{
+    display: inline-block;
+    position: absolute;
+    box-sizing: border-box;
+    background-image: url('../main.png');
+    height: 60px;
+    width: 60px;
+    margin-top: 35px;
+    background-size: 100%;
+}
+.logo{
+    display: inline-block;
+    position: absolute;
+    box-sizing: border-box;
+    background-image: url('../main.png');
+    height: 55px;
+    width: 55px;
+    margin-top: 0;
+    background-size: 100%;
+}
+.div-left ul li {
+    float: left;
+    list-style-type: none;
+
+
+}
+
+.used{
+    color:#75dec3 ;
+}
+ a {
+    text-decoration: none;
+    color :white;
+    font-size:18px ;
+    margin :10px
+}
+ul:first-of-type{
+     margin-left: 40px;
+    margin-bottom: 0;
+    padding-left: 40px;
+ }
+ .hidden{
+     display:none;
+ }
+ .desktop{
+     display: flex;
+     justify-content: space-between;
+     position:fixed;
+     top: 0;
+     left: 0;
+     height:50px;
+     z-index: 1;
+     background-color: #1f212aef;
+     width: 100vw;
+ }
+ .container{
+     min-height: calc(100vh - 50px) ;
+ }
+.dropdown-menu {
+    display: none;
+}
+span{
+    display: block;
+    width: 29px;
+    height: 2px;
+    background: #fff;
+    margin: 6px 0;
+}
+@media (max-width: 768px) {
+    .dropdown-menu {
+        width: 100%;
+        display: block;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+        height: 100%;
+    }
+    .desktop{
+        display: none;
+    }
+    .dropdown-menu ul{
+        margin-top: 50px;
+        margin-left: 0px;
+        background: rgba(23, 44, 42, 0.85);
+    }
+    ul li {
+
+        list-style-type: none;
+        margin: 4px;
+
+
+    }
+    .dropdown-menu a{
+        margin-left: 8px;
+    }
+
+
+}
