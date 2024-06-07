@@ -1,0 +1,31 @@
+.ticket-container{
+    display: flex;
+    background-color: #1bd79a99;
+    height: 200px;
+    width: 1000px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    margin-top:70px;
+    margin-left:10px;
+    box-shadow: 0 0 15px #1bd79a99;
+    justify-content: space-between;
+}
+.ticket-right{
+    display: flex;
+}
+.ticket-left{
+    display:flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.ticket-exept-img{
+    margin-left:10px;
+    margin-top:10px;
+    display: flex;
+    flex-direction:column;
+}
+.ticket-image img{
+
+    height:200px;
+
+}

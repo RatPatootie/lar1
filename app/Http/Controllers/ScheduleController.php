@@ -7,6 +7,7 @@ use App\Models\Movies;
 use App\Models\Seat;
 use App\Models\Session;
 use App\Models\Ticket;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -18,6 +19,7 @@ class ScheduleController extends Controller
         $sessions = Session::join('movies', 'sessions.movie_id', '=', 'movies.id')
             ->join('halls', 'sessions.hall_number', '=', 'halls.id')
             ->select('sessions.*', 'movies.title as title', 'movies.poster_url', 'halls.description as hall_description')
+            ->where('sessions.date_of_session',">=",Carbon::today())
             ->get();
 
         return view('schedule', ['sessions' => $sessions]);

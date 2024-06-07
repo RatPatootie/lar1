@@ -137,7 +137,7 @@ ul:first-of-type{
 .dropdown-menu {
     display: none;
 }
-span{
+.h-m__bars span{
     display: block;
     width: 29px;
     height: 2px;
